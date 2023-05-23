@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    margin:0;
+}
+
+/* em tamaño relativo al de la fuente*/
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #49a078;
+}
+button:hover{
+    background-color: #9cc5a1;
+}
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+.color-acento{color: #49a078;}
+header{
+    background-color: rgb(245,245,245);
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #49a078;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+header a:hover{
+    color: #49a078;
+}
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/cyberspace-g9325cfe18_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#banner h1{
+    color: white;
+}
+#somosmetworld{
+
+}
+#somosmetworld .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+#nuestros-programas{
+    background-color: #1f2421;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+#nuestros-programas .container{
+    padding: 200px 12px;
+
+}
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+#nuestros-programas p{
+    display:none;
+}
+ .carta{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    
+
+}
+/* para elegir cada carta*/
+.carta :first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/career.jpg"); 
+    
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/Cheating.JPG");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/career.jpg"); 
+}
+.carta :nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/techop.jpg"); 
+}
+/*nuestros cursos*/
+#nuestros-cursos{
+    background-color: #1f2421;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+#nuestros-cursos .container{
+    padding: 200px 12px;
+
+}
+#nuestros-cursos h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+#nuestros-cursos p{
+    display: none;
+}
+#nuestros-cursos .carta1{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+
+}
+/* para elegir cada carta*/
+.carta1 :first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/images.jpg"); 
+    
+
+}
+.carta1 :nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/Cheating.JPG");
+}
+.carta1 :nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/career.jpg"); 
+}
+.carta1 :nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    )
+    ,url("MEDIA/techop.jpg"); 
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #01111d;
+    color: white;
+    height: 80vh;
+
+
+}
+#final h2{
+    font-size: 6vw;
+}
+#final button{
+    font-size: 4vw;
+}
+footer{
+    background-color: #1f2421;
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: #eef1ef;
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+}
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header.container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+    #banner h1 {
+        font-size: 5em;
+    }
+ 
+    #somosnetworld .container{
+        display: flex;
+        justify-content: space-evenly;
+        margin:2cm 0.5cm;
+        padding: 0em ;
+
+
+    }
+    #somosnetworld .texto{
+       width: 50%;
+       max-width: 600px;
+       text-align: initial;
+       padding left: 30px; 
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+    }
+    #somosnetworld .img-container{
+        background-image:  url("MEDIA/cyberspace-g9325cfe18_1280.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+
+    }
+    #somosnetworld h2{
+        margin-top: 0px;
+    }
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+
+
+    }
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-programas .carta{
+        padding: 15px;
+    }
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+    #nuestros-cursos .cursos{
+        display: flex;
+        justify-content: center;
+
+
+    }
+    #nuestros-cursos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #nuestros-cursos .carta1{
+        padding: 15px;
+    }
+    #nuestros-cursos h3{
+        margin-top: 0;
+    }
+
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
