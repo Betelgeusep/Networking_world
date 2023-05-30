@@ -1,4 +1,9 @@
 /* Estilos generales */
+*{
+  margin:0; padding: 0;
+  box-sizing: border-box;
+
+}
 h1{
   font-weight: 400;
   text-align: left;
@@ -10,6 +15,9 @@ body {
   margin: 0;
   padding: 0;
  
+}
+.par{
+  text-align: center;
 }
 
 .container_t {
@@ -37,12 +45,7 @@ body p{
 }
 
 /* Estilos del encabezado */
-header {
-  background-color: #e9e9e9;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
+
 .img_pr{
   display: block;
   margin-left: auto;
@@ -73,15 +76,9 @@ header {
   padding-top: 50px;
 }
 
-.header h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
-.header p {
-  font-size: 16px;
-  color: #555555;
-}
+
+
 
 /* Estilos del contenido principal */
 main {
