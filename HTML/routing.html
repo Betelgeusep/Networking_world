@@ -62,51 +62,47 @@
   
     <main>
       <section class="container2">
-        <h1 class="subtitle">Routing/Enrutamiento</h1>
-      <div class="container_t">
-        <img src="../img-topics/enrutamiento-portada.jpg" alt="">
-        <div class="caption">
-          <h2>Enrutamiento</h2>
+        
+        <div class="container2">
+          <h1 class="subtitle">Routing/Enrutamiento</h1>
+          <h2 class="subtitle">Enrutamiento</h2>
           <p class="paragraph">El enrutamiento es el proceso mediante el cual los datos se dirigen de manera eficiente desde un origen a un destino a través de una red de dispositivos interconectados. En un sistema de red, los enrutadores son los dispositivos clave que se encargan de tomar decisiones de enrutamiento y determinar la mejor ruta para enviar los paquetes de datos.</p>
-        </div>
-  
-      </div>
-      <div class="container2">
-      <h2 class="subtitle">Introducción al Routing/Enrutamiento</h2>
-      <h3 class="subtitle">Decisión de Reenvío de Paquetes de Router</h3>
-            <p class="paragraph">En el tema anterior se discutieron las tablas de enrutamiento de host. La mayoría de las redes también contienen routers, que son dispositivos intermediarios. Los routers también contienen tablas de enrutamiento. En este tema se tratan las operaciones del router en la capa de red. Cuando un host envía un paquete a otro host, consulta su tabla de enrutamiento para determinar dónde enviar el paquete. Si el host de destino está en una red remota, el paquete se reenvía a la puerta de enlace predeterminada, que generalmente es el router local.</p>
-       <h4 class="subtitle">¿Qué sucede cuando llega un paquete a la interfaz de un Router?</h4>
-            <p class="paragraph">El Router examina la dirección IP de destino del paquete y busca en su tabla de enrutamiento para determinar dónde reenviar el paquete. La tabla de enrutamiento contiene una lista de todas las direcciones de red conocidas (prefijos) y dónde reenviar el paquete. Estas entradas se conocen como entradas de ruta o <strong>routes</strong>. El Router reenviará el paquete utilizando la mejor (más larga) entrada de ruta coincidente.</p>
-        <img src="../img-topics/img-18.png" alt="">
-        <ul>
-            <li>El paquete llega a la interfaz Gigabit Ethernet 0/0/0 del Router R1. R1 desencapsula el encabezado y el tráiler de Ethernet de capa 2.</li>
-            <li>El Router R1 examina la dirección IPv4 de destino del paquete y busca la mejor coincidencia en su tabla de enrutamiento IPv4. La entrada de ruta indica que este paquete debe reenviarse al Router R2.</li>          
-            <li>El Router R1 encapsula el paquete en un nuevo encabezado y tráiler de Ethernet, y reenvía el paquete al Router de salto R2 siguiente.</li>          
-        </ul>        
-        <img src="../img-topics/img-19.png" alt="">
-      <h3 class="subtitle">Tabla de Enrutamiento de Router IP</h3>
-            <p class="paragraph">La tabla de enrutamiento del Router contiene entradas de ruta de red que enumeran todos los posibles destinos de red conocidos.</p>
+          <img src="../img-topics/enrutamiento-portada.jpg" alt="">
+          <h2 class="subtitle">Introducción al Routing/Enrutamiento</h2>
+          <h3 class="subtitle1">Decisión de Reenvío de Paquetes de Router</h3>
+          <p class="paragraph">En el tema anterior se discutieron las tablas de enrutamiento de host. La mayoría de las redes también contienen routers, que son dispositivos intermediarios. Los routers también contienen tablas de enrutamiento. En este tema se tratan las operaciones del router en la capa de red. Cuando un host envía un paquete a otro host, consulta su tabla de enrutamiento para determinar dónde enviar el paquete. Si el host de destino está en una red remota, el paquete se reenvía a la puerta de enlace predeterminada, que generalmente es el router local.</p>
+          <h4 class="subtitle">¿Qué sucede cuando llega un paquete a la interfaz de un Router?</h4>
+          <p class="paragraph">El Router examina la dirección IP de destino del paquete y busca en su tabla de enrutamiento para determinar dónde reenviar el paquete. La tabla de enrutamiento contiene una lista de todas las direcciones de red conocidas (prefijos) y dónde reenviar el paquete. Estas entradas se conocen como entradas de ruta o <strong>routes</strong>. El Router reenviará el paquete utilizando la mejor (más larga) entrada de ruta coincidente.</p>
+          <img src="../img-topics/img-18.png" alt="">
           <ul>
-            <li><strong>Redes conectadas directamente:</strong> estas entradas de ruta de red son interfaces de Router activas. Los routers agregan una ruta conectada directamente cuando una interfaz se configura con una dirección IP y se activa. Cada interfaz de Router está conectada a un segmento de red diferente. En la imagen, las redes conectadas directamente en la tabla de enrutamiento R1 IPv4 serían 192.168.10.0/24 y 209.165.200.224/30.</li>
-            <li><strong>Redes remotas:</strong> estas entradas de ruta de red están conectadas a otros routers. Los routers aprenden sobre redes remotas, ya sea mediante la configuración explícita de un administrador o mediante el intercambio de información de ruta mediante un protocolo de enrutamiento dinámico. En la imagen, la red remota en la tabla de enrutamiento R1 IPv4 sería 10.1.1.0/24.</li>
-            <li><strong>Ruta predeterminada:</strong> al igual que un host, la mayoría de los routers también incluyen una entrada de ruta predeterminada, una puerta de enlace de último recurso. La ruta predeterminada se usa cuando no hay una mejor (más larga) coincidencia en la tabla de enrutamiento IP. En la imagen, la tabla de enrutamiento R1 IPv4 probablemente incluiría una ruta predeterminada para reenviar todos los paquetes al Router R2.</li>
-          </ul>
-            <p class="paragraph">La imagen identifica las redes directamente conectadas y remotas del Router R1.</p>
-        <img src="../img-topics/img-20.png" alt="">
-            <p class="paragraph">R1 tiene dos redes conectadas directamente:</p>
-          <ul>
-            <li>192.168.10.0/24</li>
-            <li>209.165.200.224/30</li>        
+              <li>El paquete llega a la interfaz Gigabit Ethernet 0/0/0 del Router R1. R1 desencapsula el encabezado y el tráiler de Ethernet de capa 2.</li>
+              <li>El Router R1 examina la dirección IPv4 de destino del paquete y busca la mejor coincidencia en su tabla de enrutamiento IPv4. La entrada de ruta indica que este paquete debe reenviarse al Router R2.</li>          
+              <li>El Router R1 encapsula el paquete en un nuevo encabezado y tráiler de Ethernet, y reenvía el paquete al Router de salto R2 siguiente.</li>          
           </ul>        
-            <p class="paragraph">R1 también tiene redes remotas (es decir, 10.1.1.0/24 e Internet) sobre las que puede aprender.</p>        
-            <p class="paragraph">Un Router puede aprender sobre redes remotas de una de dos maneras:</p>        
-          <ul>
-            <li><strong>Manualmente:</strong> las redes remotas se ingresan manualmente en la tabla de rutas mediante rutas estáticas.</li>        
-            <li><strong>Dinámicamente:</strong> las rutas remotas se aprenden automáticamente mediante un protocolo de enrutamiento dinámico.</li>        
-          </ul>
-       <h3 class="subtitle">Enrutamiento Estático</h3>
-            <p class="paragraph">Las rutas estáticas son entradas de ruta que se configuran manualmente. La imagen muestra un ejemplo de una ruta estática que se configuró manualmente en el Router R1. La ruta estática incluye la dirección de red remota y la dirección IP del Router del siguiente salto.</p>
-        <img src="../img-topics/img-21.png" alt="">
+          <img src="../img-topics/img-19.png" alt="">
+          <h3 class="subtitle">Tabla de Enrutamiento de Router IP</h3>
+                <p class="paragraph">La tabla de enrutamiento del Router contiene entradas de ruta de red que enumeran todos los posibles destinos de red conocidos.</p>
+              <ul>
+                <li><strong>Redes conectadas directamente:</strong> estas entradas de ruta de red son interfaces de Router activas. Los routers agregan una ruta conectada directamente cuando una interfaz se configura con una dirección IP y se activa. Cada interfaz de Router está conectada a un segmento de red diferente. En la imagen, las redes conectadas directamente en la tabla de enrutamiento R1 IPv4 serían 192.168.10.0/24 y 209.165.200.224/30.</li>
+                <li><strong>Redes remotas:</strong> estas entradas de ruta de red están conectadas a otros routers. Los routers aprenden sobre redes remotas, ya sea mediante la configuración explícita de un administrador o mediante el intercambio de información de ruta mediante un protocolo de enrutamiento dinámico. En la imagen, la red remota en la tabla de enrutamiento R1 IPv4 sería 10.1.1.0/24.</li>
+                <li><strong>Ruta predeterminada:</strong> al igual que un host, la mayoría de los routers también incluyen una entrada de ruta predeterminada, una puerta de enlace de último recurso. La ruta predeterminada se usa cuando no hay una mejor (más larga) coincidencia en la tabla de enrutamiento IP. En la imagen, la tabla de enrutamiento R1 IPv4 probablemente incluiría una ruta predeterminada para reenviar todos los paquetes al Router R2.</li>
+              </ul>
+                <p class="paragraph">La imagen identifica las redes directamente conectadas y remotas del Router R1.</p>
+            <img src="../img-topics/img-20.png" alt="">
+                <p class="paragraph">R1 tiene dos redes conectadas directamente:</p>
+              <ul>
+                <li>192.168.10.0/24</li>
+                <li>209.165.200.224/30</li>        
+              </ul>        
+                <p class="paragraph">R1 también tiene redes remotas (es decir, 10.1.1.0/24 e Internet) sobre las que puede aprender.</p>        
+                <p class="paragraph">Un Router puede aprender sobre redes remotas de una de dos maneras:</p>        
+              <ul>
+                <li><strong>Manualmente:</strong> las redes remotas se ingresan manualmente en la tabla de rutas mediante rutas estáticas.</li>        
+                <li><strong>Dinámicamente:</strong> las rutas remotas se aprenden automáticamente mediante un protocolo de enrutamiento dinámico.</li>        
+              </ul>
+              <h3 class="subtitle">Enrutamiento Estático</h3>
+              <p class="paragraph">Las rutas estáticas son entradas de ruta que se configuran manualmente. La imagen muestra un ejemplo de una ruta estática que se configuró manualmente en el Router R1. La ruta estática incluye la dirección de red remota y la dirección IP del Router del siguiente salto.</p>
+            <img src="../img-topics/img-21.png" alt="">
            <ul>
             <li>R1 se configura manualmente con una ruta estática para llegar a la red 10.1.1.0/24. Si esta ruta cambia, R1 requerirá una nueva ruta estática.</li>
             </ul>        
@@ -137,7 +133,7 @@
             <li>Elija el mejor camino hacia las redes de destino</li>            
             <li>Intente encontrar una nueva mejor ruta si la ruta actual ya no está disponible.</li>
           </ul> 
-            <p class="paragraph">Cuando un Router se configura manualmente con una ruta estática o aprende sobre una red remota de forma dinámica mediante un protocolo de enrutamiento dinámico, la dirección de red remota y la dirección del siguiente salto se ingresan en la tabla de enrutamiento IP. Como se muestra en la imagen, si hay un cambio en la topología de la red, los routers se ajustarán automáticamente e intentarán encontrar una nueva mejor ruta.</p>
+          <p class="paragraph">Cuando un Router se configura manualmente con una ruta estática o aprende sobre una red remota de forma dinámica mediante un protocolo de enrutamiento dinámico, la dirección de red remota y la dirección del siguiente salto se ingresan en la tabla de enrutamiento IP. Como se muestra en la imagen, si hay un cambio en la topología de la red, los routers se ajustarán automáticamente e intentarán encontrar una nueva mejor ruta.</p>
 
 
       </section>
@@ -178,14 +174,14 @@
       </section>
       <section class="footer_copy container">
         <div class="footer_social">
-          <a href="#" class="footer_icons"><img src="./MEDIA/facebook.svg" alt="facebook" class="footer_img"></a>
-          <a href="#" class="footer_icons"><img src="./MEDIA/twitter.svg" alt="twitter" class="footer_img"></a>
-          <a href="#" class="footer_icons"><img src="./MEDIA/youtube.svg" alt="youtube" class="footer_img"></a>
+          <a href="#" class="footer_icons"><img src="../MEDIA/facebook.svg" alt="facebook" class="footer_img"></a>
+          <a href="#" class="footer_icons"><img src="../MEDIA/twitter.svg" alt="twitter" class="footer_img"></a>
+          <a href="#" class="footer_icons"><img src="../MEDIA/youtube.svg" alt="youtube" class="footer_img"></a>
         </div>
         <h3 class="footer_copyright">Derechos Reservados &copy; Networking World</h3>
   
       </section>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

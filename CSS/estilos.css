@@ -151,6 +151,11 @@ body{
     margin-bottom: 25px;
     
 }
+.subtitle1{
+    color: var(--color-tittle);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
 .about_paragraph{
     line-height: 1.7;
 }
