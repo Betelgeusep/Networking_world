@@ -1,9 +1,5 @@
 /* Estilos generales */
-*{
-  margin:0; padding: 0;
-  box-sizing: border-box;
 
-}
 h1{
   font-weight: 400;
   text-align: left;
@@ -68,10 +64,7 @@ body p{
   justify-content: center;
 }
 
-.caption1 {
-  
-  
-}
+
 .caption{
   padding-top: 50px;
 }
@@ -87,14 +80,7 @@ main {
 
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  header img {
-    margin: 0 auto 20px;
-  }
   .container_t{
     display: flex;
     flex-direction: column;
